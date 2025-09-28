@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 max_len = 88200
 
-model = load_model("cnn-zooniverce.h5")
+model = load_model("Dog_vs_Cat/cnn-zooniverce.h5")
 
 def prepare_data(smaple):
   sound, sr = librosa.load(smaple)
