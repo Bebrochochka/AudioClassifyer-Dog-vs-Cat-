@@ -33,7 +33,7 @@ def prepare_data(smaple):
   S = librosa.amplitude_to_db(np.abs(sound))
   return S, sr
 
-st.title("Dog vs Cat vs Cow Audio Classifier 🐶🐱")
+st.title("Dog vs Cat vs Cow Audio Classifier 🐶🐱🐄")
 file = st.file_uploader("Upload an audio of DOG or CAT or COW", type=["mp3", "wav"])
 
 if file:
