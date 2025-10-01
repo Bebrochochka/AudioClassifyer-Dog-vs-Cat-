@@ -48,6 +48,6 @@ if file:
     X = np.array(spectrogram, np.float32)
     X = X.reshape(1, 1025, 173, 1)
     prediction = model.predict(X)
-    classes = ['Cow', 'Cat', 'Dog']  # порядок соответствует тому, как LabelEncoder их кодировал
+    classes = ['Cat', 'Cow', 'Dog']  # порядок соответствует тому, как LabelEncoder их кодировал
     real_pred = classes[np.argmax(prediction)]
     st.write("Predicted class:",(real_pred))
