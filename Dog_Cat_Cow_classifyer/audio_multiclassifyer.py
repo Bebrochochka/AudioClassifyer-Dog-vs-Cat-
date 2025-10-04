@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 
 max_len = 88200
 
-model = load_model("multiclass_audio90.h5")
+model = load_model("multiclass_audio92.h5")
 
 def prepare_data(smaple):
   sound, sr = librosa.load(smaple)
